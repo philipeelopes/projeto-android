@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+
+/*
+#51B852
+#568E57
+#3DE340
+#4D634D
+#313931
+#243324
+*/
+:root{
+    --cor00:  #829785; 
+    --cor0: #51B852;
+    --cor1: #568E57;
+    --cor2: #3DE340;
+    --cor3: #4D634D;
+    --cor4: #313931;
+    --cor5: #243324;
+
+    
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Shadows Into Light'
+    --fonte-android: 'android'
+    
+    
+
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: wheat ;
+    font-family:  var(--fonte-padrao);
+  
+}
+a.externo::after {
+    content: '\00A0\1F517';
+
+
+}
+
+
+
+header{
+    background-image: linear-gradient(to left, var(--cor0), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+
+
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    width: 400px;
+    margin: auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+    
+
+    
+}
+
+nav{
+background-image: linear-gradient(to left, var(--cor0), var(--cor5));
+padding: 10px;
+box-shadow: 0px 2px 2px black;
+
+}
+
+nav > a {
+
+color: white;
+padding: 10px;
+text-decoration: none;
+font-weight: bold;
+border-radius: 4px;
+transition-duration: .5s;
+
+}
+nav > a:hover{
+background-color: #313931;
+color: #3DE340;
+
+}
+
+main{
+
+    background-color: white;
+    max-width: 900px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main p{
+    margin: 15px 0px 15px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+main strong{
+    color: #243324;
+    font-weight: bold;  
+    padding: 2px;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #313931;
+    background-color: #829785;
+    border-radius: 5px;
+    padding: 2px 6px;
+
+}
+main a:hover{
+    text-decoration: underline;
+    color: #3DE340;
+    text-shadow: #829785;
+
+
+
+}
+header > h1{
+    color: white ;
+    font-family: var(--fonte-destaque);
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+    
+}
+
+main  h1{
+    color: #243324;
+    font-family: var(--fonte-android);
+    font-size: 30px;
+    
+    
+}
+
+main h2{
+    font-family: var(--fonte-destaque);
+    color: #4ca84c;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, black, transparent);
+    text-indent: 8px;
+}
+aside{
+    background-color: #829785;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.507);
+
+}
+aside > h3{
+    background-color: #568E57;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+aside > ul{
+    list-style-type: '\2714  \00A0';
+    list-style-position: inside;
+    columns: 2;
+
+}
+
+footer{
+
+    background-color: #313931;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a {
+    color: aliceblue;
+    font-weight:bolder ;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color:#829785 ;
+}
+img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+div.video{
+    background-color: #243324;
+   margin: 0px -20px 30px -20px ;
+   padding: 20px;
+   padding-bottom: 57%;
+   position: relative;
+}
+div.video > iframe{
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+}
+
+
+main{
+    width: 100%;
+}
